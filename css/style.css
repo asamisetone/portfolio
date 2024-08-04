@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body {
+  background-image: url(../images/texture.png);
+  background-color: rgba(249, 250, 253, 0.6);
+  background-size: cover;
+}
+.contener {
+  max-width: 835px;
+}
+
+/* header */
+
+.logo .tittle img {
+  width: 180px;
+  height: auto;
+  padding-left: 4%;
+}
+
+.logo {
+  display: flex;
+}
+.logo img {
+  width: 55px;
+  height: auto;
+}
+.hd_main {
+  height: 140px;
+  max-width: 1100px;
+  padding: 0 8% 0 8%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.pc_nav {
+  display: flex;
+}
+.pc_nav .icon {
+  width: 17px;
+  height: auto;
+}
+.pc_nav li {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Sofia Pro" sans-serif;
+  margin: 0 34px 0 34px;
+}
+
+/* main visual */
+
+.mainvisual img {
+  width: 65%;
+  height: auto;
+  float: right;
+  margin-left: auto;
+  position: relative;
+}
+.copy {
+  position: absolute;
+  top: 30%;
+  left: 16%;
+}
+h2 {
+  font-size: 46px;
+  line-height: 1.8;
+  letter-spacing: 0.35em;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.mainvisual p {
+  font-size: 13px;
+  letter-spacing: 0.23em;
+}
+
+/* scroll */
+
+.scrolldown p {
+  transform: rotate(90deg);
+  transform-origin: left;
+  margin-left: 8%;
+  font-size: 14px;
+  font-family: "Sofia Pro" sans-serif;
+}
+.scrolldown img {
+  width: 24px;
+  height: auto;
+  margin-left: 7%;
+  margin-top: 70px;
+}
+
+/* about */
+
+#about {
+  margin: 0 auto;
+}
