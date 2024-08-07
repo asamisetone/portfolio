@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Re; design | ポートフォリオサイト</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
 </head>
+
+
 
 <body>
     <header>
@@ -43,19 +53,162 @@
             <img src="./images/asiato.svg" alt="足跡">
         </section>
 
+        <div class="menu_btn">
+            <img src="./images/asiato_2.svg" alt="足跡">
+            <p>about</p>
+        </div>
+
         <section id="about" class="contener">
-            <h3>はじめまして。<br>
-                当サイトをご覧いただきありがとうございます。</h3>
-            <div class="about_desc">
-                <ul>
-                    <li></li>
-                </ul>
+            <div class="about">
+                <h3>はじめまして。<br>
+                    当サイトをご覧いただきありがとうございます。</h3>
+                <div class="about_desc">
+                    <ul>
+                        <li>
+                            <p class="re_word"><span>Re </span>assure</p>
+                            <p class="re_mean">リクエストを丁寧にヒアリングし</p>
+                        </li>
+                        <li>
+                            <p class="re_word"><span>Re </span>member</p>
+                            <p class="re_mean">ユーザーの記憶に残り</p>
+                        </li>
+                        <li>
+                            <p class="re_word"><span>Re </span>turn</p>
+                            <p class="re_mean">安心していただける</p>
+                        </li>
+                        <li>
+                            <p class="re_word"><span>Re </span>lease</p>
+                            <p class="re_mean">クリエイティブを発信</p>
+                        </li>
+                    </ul>
+                    <img src="./images/about_img-80.jpg" alt="image">
+                </div>
+                <p class="about_text">そんな想いで日々活動をしております。<br>
+                    どんな些細なことでもいいので、お気軽に声をかけていただけると幸いです。</p>
+                <div class="my_profile">
+                    <p><a href="profile.html">my profile</a></p>
+                </div>
+
             </div>
-            <p>そんな想いで日々活動をしております。
-                どんな些細なことでもいいので、お気軽に声をかけていただけると幸いです。</p>
+            <div class="backdround_Re">
+                <img src="./images/backdround_Re.svg" alt="image">
+            </div>
+        </section>
+
+        <div class="menu_btn">
+            <img src="./images/asiato_2.svg" alt="足跡">
+            <p>service</p>
+        </div>
+
+        <section id="service" class="contener">
+            <div id="design" class="service_content">
+                <img src="./images/design-80.jpg" alt="design_img">
+                <div class="service_box">
+                    <div class="service_tittle">
+                        <p>DESIGN</p>
+                        <p>デザイン</p>
+                    </div>
+                    <div class="underline">
+                        <img src="./images/underline.svg" alt="下線">
+                    </div>
+                    <div class="service_text">
+                        <p>ターゲットユーザーを明確にし、そのニーズや行動パターンを理解することを心がけています。
+                            そのためヒアリングをしっかりさせていただきます。バナー制作やLP制作を主にしています。</p>
+                    </div>
+                    <div class="service_tool">
+                        <p>使用ツール</p>
+                        <p>Illustrator / Photoshop </p>
+                    </div>
+                    <div class="service_frame">
+                        <img src="./images/frame_border.svg" alt="フレーム">
+                    </div>
+                </div>
+            </div>
+            <div id="coding" class="service_content">
+                <img src="./images/coding-80.jpg" alt="coding_img">
+                <div class="service_box">
+                    <div class="service_tittle">
+                        <p>CODING</p>
+                        <p>コーディング</p>
+                    </div>
+                    <div class="underline">
+                        <img src="./images/underline.svg" alt="下線">
+                    </div>
+                    <div class="service_text">
+                        <p>なるべく複雑なコードは避け、綺麗でメンテナンスのしやすいコードを書くことを心がけています。レスポンシブにも対応しております。
+                            また、Java Script , jQueryを用いてWEBサイトに動きをつけることも可能です。。</p>
+                    </div>
+                    <div class="service_tool">
+                        <p>使用言語・ツール</p>
+                        <p>HTML / CSS / jQuery / Github / VSCode </p>
+                    </div>
+                    <div class="service_frame">
+                        <img src="./images/frame_border.svg" alt="フレーム">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu_btn">
+            <img src="./images/asiato_2.svg" alt="足跡">
+            <p>work</p>
+        </div>
+
+        <section id="work" class="contener">
+            <div class="work_img">
+                <div class="work_1">
+                    <a href="./work1_html" data-lightbox="image" data-title="work">
+                        <img src=" ./images/burger shop_1-80.jpg" alt="burger shop"></a>
+                    <div class="work_item">
+                        <div class="work_num">
+                            <span>01</span>
+                            <img src="./images/diagonal line.svg" alt="/">
+                        </div>
+                        <div class="work_title">
+                            <p>burger shop</p>
+                            <p>#banner design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_2">
+                    <a href="./work2_html" data-lightbox="image" data-title="work">
+                        <img src="./images/burger shop_2-80.jpg" alt="burger shop"></a>
+                    <div class="work_item">
+                        <div class="work_num">
+                            <span>02</span>
+                            <img src="./images/diagonal line.svg" alt="/">
+                        </div>
+                        <div class="work_title">
+                            <p>burger shop</p>
+                            <p>#banner design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contener">
+            <div class="contact_btn">
+                <img src="./images/asiato_2.svg" alt="足跡">
+                <p>contact</p>
+            </div>
+            <div class="contact_comment">
+                <p>お仕事のご依頼、ご相談など。
+                    ほんの些細なことでも声をかけていただけたら嬉しいです。
+                    何でもお気軽にどうぞ。お問合わせお待ちしております。</p>
+            </div>
 
         </section>
+
     </main>
+    <script>
+        $('.work_img').slick({
+            autoplay: true,
+            autoplayspeed: 500,
+            slidesToShow: 1,
+            fade: true,
+        });
+    </script>
 </body>
 
 </html>
