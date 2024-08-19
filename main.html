@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 </head>
 
@@ -26,16 +26,34 @@
                 <img src="./images/logo.svg" alt="ロゴ">
                 <h1 class="tittle"><a href="main.html"><img src="./images/tittle.svg" alt=""></a></h1>
             </div>
-            <ul class="pc_nav">
-                <li><a href="about.html">about</a></li>
-                <li><a href="service.html">service</a></li>
-                <li><a href="work.html">work</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram.svg" alt="instagram"
-                            class="icon"></a>
-                </li>
-                <li><img src="./images/x.svg" alt="x" class="icon"></li>
-            </ul>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#service">service</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram.svg" alt="instagram"
+                                class="icon"></a>
+                    </li>
+                    <li><img src="./images/x.svg" alt="x" class="icon"></li>
+                </ul>
+            </nav>
+
+            <div class="sp_btn">
+                <span></span>
+            </div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="##service">service</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram.svg" alt="instagram"
+                                class="icon"></a>
+                    </li>
+                    <li><img src="./images/x.svg" alt="x" class="icon"></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -53,12 +71,12 @@
             <img src="./images/asiato.svg" alt="足跡">
         </section>
 
-        <div class="menu_btn">
-            <img src="./images/asiato_2.svg" alt="足跡">
-            <p>about</p>
-        </div>
 
-        <section id="about" class="contener">
+        <section id="about">
+            <div class="about_btn">
+                <img src="./images/asiato_2.svg" alt="足跡">
+                <p>about</p>
+            </div>
             <div class="about">
                 <h3>はじめまして。<br>
                     当サイトをご覧いただきありがとうございます。</h3>
@@ -86,7 +104,7 @@
                 <p class="about_text">そんな想いで日々活動をしております。<br>
                     どんな些細なことでもいいので、お気軽に声をかけていただけると幸いです。</p>
                 <div class="my_profile">
-                    <p><a href="profile.html">my profile</a></p>
+                    <p><a href="myprofile.html">my profile</a></p>
                 </div>
 
             </div>
@@ -95,12 +113,13 @@
             </div>
         </section>
 
-        <div class="menu_btn">
-            <img src="./images/asiato_2.svg" alt="足跡">
-            <p>service</p>
-        </div>
+
 
         <section id="service" class="contener">
+            <div class="service_btn">
+                <img src="./images/asiato_2.svg" alt="足跡">
+                <p>service</p>
+            </div>
             <div id="design" class="service_content">
                 <img src="./images/design-80.jpg" alt="design_img">
                 <div class="service_box">
@@ -149,15 +168,15 @@
             </div>
         </section>
 
-        <div class="menu_btn">
-            <img src="./images/asiato_2.svg" alt="足跡">
-            <p>work</p>
-        </div>
 
         <section id="work" class="contener">
+            <div class="work_btn">
+                <img src="./images/asiato_2.svg" alt="足跡">
+                <p>work</p>
+            </div>
             <div class="work_img">
                 <div class="work_1">
-                    <a href="./work1_html" data-lightbox="image" data-title="work">
+                    <a href="./work1.html">
                         <img src=" ./images/burger shop_1-80.jpg" alt="burger shop"></a>
                     <div class="work_item">
                         <div class="work_num">
@@ -171,7 +190,7 @@
                     </div>
                 </div>
                 <div class="work_2">
-                    <a href="./work2_html" data-lightbox="image" data-title="work">
+                    <a href="./work2.html">
                         <img src="./images/burger shop_2-80.jpg" alt="burger shop"></a>
                     <div class="work_item">
                         <div class="work_num">
@@ -184,6 +203,65 @@
                         </div>
                     </div>
                 </div>
+                <div class="work_3">
+                    <a href="./work3.html">
+                        <img src="./images/travel media-80.jpg" alt="travel media"></a>
+                    <div class="work_item">
+                        <div class="work_num">
+                            <span>03</span>
+                            <img src="./images/diagonal line.svg" alt="/">
+                        </div>
+                        <div class="work_title">
+                            <p>travel media</p>
+                            <p>#banner design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_4">
+                    <a href="./work4.html">
+                        <img src="./images/coworking space-80.jpg" alt="coworking space"></a>
+                    <div class="work_item">
+                        <div class="work_num">
+                            <span>04</span>
+                            <img src="./images/diagonal line.svg" alt="/">
+                        </div>
+                        <div class="work_title">
+                            <p>coworking space</p>
+                            <p>#LP design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_5">
+                    <a href="./work5.html">
+                        <img src="./images/cafe site-80.jpg" alt="cafe site"></a>
+                    <div class="work_item">
+                        <div class="work_num">
+                            <span>05</span>
+                            <img src="./images/diagonal line.svg" alt="/">
+                        </div>
+                        <div class="work_title">
+                            <p>cafe site</p>
+                            <p>#coding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_6">
+                    <a href="./work6.html" data-lightbox="image" data-title="work">
+                        <img src="./images/hair salon renewal site-80.jpg" alt="hair salon renewal site"></a>
+                    <div class="work_item">
+                        <div class="work_num">
+                            <span>06</span>
+                            <img src="./images/diagonal line.svg" alt="/">
+                        </div>
+                        <div class="work_title">
+                            <p>hair salon renewal site</p>
+                            <p>#LP design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all_view">
+                <p><a href="./workbox.html">all view</a></p>
             </div>
         </section>
 
@@ -197,17 +275,69 @@
                     ほんの些細なことでも声をかけていただけたら嬉しいです。
                     何でもお気軽にどうぞ。お問合わせお待ちしております。</p>
             </div>
-
+            <div class="contact_box">
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd-Dm8KSTinUlftNiJpNwmmsEvKLOdAJpFqIGbhjSPYYyp1lQ/formResponse"
+                    method="POST"></form>
+                <ul>
+                    <li>
+                        <p class="contact_1">＊ お名前</p>
+                        <input name="entry.2058497740" class="contact_2" placeholder="デザイン　花子">
+                    </li>
+                    <li>
+                        <p class="contact_1">＊ フリガナ</p>
+                        <input name="entry.1932699130" class="contact_2" placeholder="デザイン　ハナコ">
+                    </li>
+                    <li>
+                        <p class="contact_1">＊ メールアドレス</p>
+                        <input name="entry.1142058511" class="contact_2" placeholder="ghunlkn;ougbybn@gmail.com">
+                    </li>
+                    <li>
+                        <p class="contact_1">＊ 電話番号</p>
+                        <input name="entry.1328700944" class="contact_2" placeholder="000-0000-0000">
+                    </li>
+                    <li>
+                        <p class="contact_1">＊ お問合わせ</p>
+                        <input name="entry.554091726" class="contact_2" placeholder="概要・質問などご自由にご記入ください">
+                    </li>
+                </ul>
+            </div>
+            <div class="contact_text">
+                <p>確認画面へ進む</p>
+                <img src="./images/frame_3.svg" alt="img">
+            </div>
         </section>
-
     </main>
+
+    <footer>
+        <div class="ft_main">
+            <ul class="pc_nav">
+                <li><a href="main.html#about">about</a></li>
+                <li><a href="main.html#service">service</a></li>
+                <li><a href="main.html#work">work</a></li>
+                <li><a href="main.html#contact">contact</a></li>
+                <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram.svg" alt="instagram"
+                            class="icon"></a>
+                </li>
+                <li><img src="./images/x.svg" alt="x" class="icon"></li>
+            </ul>
+        </div>
+    </footer>
+
     <script>
-        $('.work_img').slick({
-            autoplay: true,
-            autoplayspeed: 500,
-            slidesToShow: 1,
-            fade: true,
-        });
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_nav").fadeToggle();
+                $(".sp_btn").toggleClass("open");
+            })
+
+            $('.work_img').slick({
+                autoplay: true,
+                autoplayspeed: 500,
+                slidesToShow: 1,
+                slidesToscroll: 1,
+            });
+        })
     </script>
 </body>
 

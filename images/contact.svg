@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 301.96 42.5">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #eadac5;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-4 {
+        mask: url(#mask);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-6 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-8 {
+        fill: #efe8df;
+        stroke-width: 0px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-11 {
+        opacity: .8;
+      }
+
+      .cls-12 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-14 {
+        fill: #000;
+        font-family: YuGo-Medium-83pv-RKSJ-H, YuGothic;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    </style>
+    <filter id="luminosity-noclip" x=".73" y=".34" width="304" height="45" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x=".73" y=".34" width="304" height="45" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <image width="304" height="45" transform="translate(.73 .34)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATAAAAAtCAYAAAApxDcCAAAACXBIWXMAAAsSAAALEgHS3X78AAAEG0lEQVR4nO3da2viTACG4SenSaJJFQUrQsH//8tqWzVNYg6TTPJ+eJkhHlrY3bIa9rkgqJCBfLqZmQ6NBaAHEdEI2fd+ACKi3+XqL9PpFMvlElEUIQxD+L4Pz/PgOA5s24ZlWeYiIvppfd+bz77v0XUdlFKQUkJKibIskec5DocD8jwHMAjYcrnEdrvFer3GYrEwIRNCwHVd2LYN2/5/wsaIEdFP0+Hq+x5KKbRti6ZpUBQF8jzH8XjE6+srAFwHLIoirNdrbLdbbDYbzOdzxHGMIAgghIDjODdnYYwZEf0OPeMa/r6ceVVVhSzLzuK13+/NGBOwMAyxWCyw2Wzw8vKC1WqFp6cnhGEIz/Pgui4DRkQ/5ruA6dlXVVX4/PzE+/s7ACBNU4RhaMaYgPm+jyiKMJ/PsVqt8Pz8jNlsZgKm98EARouIft5wD0wpZQIWBAEAIMsyRFEEIYQZYwLmeR7CMEQcx3h6esJsNsNsNoMQgsEior8uCAL4vg8AqKoKcRxjMpmcBcwco3AcB0IIBEGAMAzNBj7jRUT3YFkWhBCmR8P9eM0EzLZtuK4LIQQ8z4PneYwXEd2VZVnwPA++78P3fXMiQrOHN9q2Dcdxrm4iIroX3SV9DSdWVwHjgVUieiT6DKq+vgyY/mS8iOiRDCdWNwP23U1ERPfyXZO40UVEo6C3uYYYMCJ6eF+tCK8CxuUjEY0FZ2BENFoMGBGNypd/hSQiGhMGjIhGiwEjotFiwIhotBgwIhotBoyIRosBI6LRYsCIaLRuBuzybSFERI9i2KergDFeRDQWXEIS0WgxYET08IYvvR2yb92kLyKiR2YCxmAR0SO6nFh9uYmvp2hd1zFoRPQQhsvHyy6dzcB0vBgwInoUfd9DKXWzTSZgXddBKYWmadC2Ldq2vcvDEhENDbukQ6adBaxtWzRNAyklmqa52vEnIvqbuq6DlBJSStR1fdUlEzClFKSUKMsSRVGYSyl1lwcnon+bUgplWeJ0OqEoCpRlCSnl2erQ1V+klDidTkjTFEmSwPd99H0PKSU8z4PruldvLOLbi4joT1zutQ/3u5qmQVmWSJIESZIgyzIURYGmacz9JmB1XSPLMuz3e0ynU3Rdh9PphMlkAiEEHMeBbds3Xy7JkBHRr7gMl14W6oDpfa+iKJCmKT4+PrDf75GmKeq6NuNMwMqyxOFwwG63AwBkWYY4jhEEATzPg+M4cBzn29d8ExH9Kh0zfVxiGLCqqpDnOY7HI3a7HY7HI4qiMGNNwLIsw263Q9/3SJIEURQhDEMIIeC67s14MWJE9KcuAzaMWF3XZxF7e3tDnudmrAlYkiSwLAv7/d4sG13X/TJeREQ/6TJk+mRE27aQUqKqKmRZhiRJzBgLAE+sEtEo8b9RENFo/Qcj81J1CaXfRwAAAABJRU5ErkJggg=="/>
+      </g>
+    </mask>
+  </defs>
+  <g id="_ワイヤー" data-name="ワイヤー">
+    <g>
+      <rect class="cls-2" x=".5" y=".5" width="298.68" height="40"/>
+      <g class="cls-11">
+        <g class="cls-4">
+          <rect class="cls-8" x="3.28" y="2.5" width="298.68" height="40"/>
+        </g>
+      </g>
+      <text class="cls-14" transform="translate(76.88 27.97)"><tspan class="cls-7" x="0" y="0">こ</tspan><tspan class="cls-12" x="17.84" y="0">え</tspan><tspan class="cls-6" x="36.04" y="0">を</tspan><tspan class="cls-1" x="54.84" y="0">か</tspan><tspan class="cls-10" x="74.44" y="0">け</tspan><tspan class="cls-13" x="93.3" y="0">て</tspan><tspan class="cls-9" x="112.54" y="0">み</tspan><tspan class="cls-3" x="130.86" y="0">る</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -22,6 +22,7 @@ li {
   color: #000;
   font-family: Zen Kaku Gothic Antique;
   font-feature-settings: "palt";
+  font-size: 15px;
   font-weight: Regular;
   scroll-behavior: smooth;
 }
