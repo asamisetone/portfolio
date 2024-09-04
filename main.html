@@ -78,7 +78,7 @@
                 <p>about</p>
             </div>
             <div class="about">
-                <h3>はじめまして。<br>
+                <h3 class="fadeInup">はじめまして。<br>
                     当サイトをご覧いただきありがとうございます。</h3>
                 <div class="about_desc">
                     <div class="about_list">
@@ -134,11 +134,11 @@
                             そのためヒアリングをしっかりさせていただきます。バナー制作やLP制作を主にしています。</p>
                     </div>
                     <div class="service_tool">
-                        <p>使用ツール</p>
-                        <p>Illustrator / Photoshop </p>
-                    </div>
-                    <div class="service_frame">
-                        <img src="./images/frame_border.svg" alt="フレーム">
+                        <div class="service_frame">
+                            <p>使用ツール</p>
+                            <img src="./images/frame_border.svg" alt="フレーム">
+                        </div>
+                        <p class="tool">Illustrator / Photoshop </p>
                     </div>
                 </div>
             </div>
@@ -157,11 +157,11 @@
                             また、Java Script , jQueryを用いてWEBサイトに動きをつけることも可能です。</p>
                     </div>
                     <div class="service_tool">
-                        <p>使用言語・ツール</p>
-                        <p>HTML / CSS / jQuery / Github / VSCode </p>
-                    </div>
-                    <div class="service_frame">
-                        <img src="./images/frame_border.svg" alt="フレーム">
+                        <div class="service_frame">
+                            <p>使用言語・ツール</p>
+                            <img src="./images/frame_border.svg" alt="フレーム">
+                        </div>
+                        <p class="tool">HTML / CSS / jQuery / Github / VSCode </p>
                     </div>
                 </div>
             </div>
@@ -274,42 +274,43 @@
             <div class="contact_comment">
                 <p>お仕事のご依頼、ご相談など。
                     ほんの些細なことでも声をかけていただけたら嬉しいです。
-                    何でもお気軽にどうぞ。お問合わせお待ちしております。</p>
+                    何でもお気軽にどうぞ。<br>お問合わせお待ちしております。</p>
             </div>
             <div class="contact_box">
                 <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd-Dm8KSTinUlftNiJpNwmmsEvKLOdAJpFqIGbhjSPYYyp1lQ/formResponse"
-                    method="POST"></form>
-                <ul>
-                    <li>
-                        <p class="contact_1">＊ お名前</p>
-                        <input name="entry.2058497740" class="contact_2" placeholder="デザイン　花子">
-                    </li>
-                    <li>
-                        <p class="contact_1">＊ フリガナ</p>
-                        <input name="entry.1932699130" class="contact_2" placeholder="デザイン　ハナコ">
-                    </li>
-                    <li>
-                        <p class="contact_1">＊ メールアドレス</p>
-                        <input name="entry.1142058511" class="contact_2" placeholder="ghunlkn;ougbybn@gmail.com">
-                    </li>
-                    <li>
-                        <p class="contact_1">＊ 電話番号</p>
-                        <input name="entry.1328700944" class="contact_2" placeholder="000-0000-0000">
-                    </li>
-                    <li>
-                        <p class="contact_1">＊ お問合わせ</p>
-                        <input name="entry.554091726" class="contact_2" placeholder="概要・質問などご自由にご記入ください">
-                    </li>
-                </ul>
+                    method="POST">
+                    <ul>
+                        <li>
+                            <p class="contact_1">＊ お名前</p>
+                            <input name="entry.2058497740" class="contact_2" placeholder="デザイン　花子">
+                        </li>
+                        <li>
+                            <p class="contact_1">＊ フリガナ</p>
+                            <input name="entry.1932699130" class="contact_2" placeholder="デザイン　ハナコ">
+                        </li>
+                        <li>
+                            <p class="contact_1">＊ メールアドレス</p>
+                            <input name="entry.1142058511" class="contact_2" placeholder="ghunlkn;ougbybn@gmail.com">
+                        </li>
+                        <li>
+                            <p class="contact_1">＊ 電話番号</p>
+                            <input name="entry.1328700944" class="contact_2" placeholder="000-0000-0000">
+                        </li>
+                        <li>
+                            <p class="contact_4">＊ お問合わせ</p>
+                            <input name="entry.554091726" class="contact_3" placeholder="概要・質問などご自由にご記入ください">
+                        </li>
+                    </ul>
+                    <button type="submit" class="contact_text">
+                        <p>確認画面へ進む</p>
+                        <!-- <img src="./images/frame_3.svg" alt="img"> -->
+                    </button>
+
+
+                </form>
             </div>
-            <div class="contact_text">
-                <p>確認画面へ進む</p>
 
-
-                <button type="submit"><img src="./images/frame_3.svg" alt="img"></button>
-
-            </div>
         </section>
     </main>
 
