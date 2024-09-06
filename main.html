@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,12 +15,24 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'uzt0tup',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 
-
 <body>
+    <!-- <div class="loading"> -->
+    <!-- ローディング中… -->
+    <!-- </div> -->
+
     <header>
         <div class="hd_main">
             <div class="logo">
@@ -58,7 +71,7 @@
     </header>
 
     <main>
-        <div class="mainvisual">
+        <div class="mainvisual fadeIn_left">
             <img src="./images/main_visual.jpg" alt="mainvisual">
             <div class="copy">
                 <h2>誠実な<br class="sp_only">ヒアリングで<br>丁寧な<br class="sp_only">デザインを</h2>
@@ -68,19 +81,23 @@
 
         <section class="scrolldown">
             <p>SCROLL</p>
-            <img src="./images/asiato.svg" alt="足跡">
+            <div class="foot_container">
+                <img class="foot" src="./images/foot.svg">
+                <img class="foot" src="./images/foot.svg">
+                <img class="foot" src="./images/foot.svg">
+            </div>
         </section>
 
 
         <section id="about">
-            <div class="about_btn">
+            <div class="about_btn fadeIn">
                 <img src="./images/asiato_2.svg" alt="足跡">
                 <p>about</p>
             </div>
             <div class="about">
-                <h3 class="fadeInup">はじめまして。<br>
+                <h3 class="fadeIn">はじめまして。<br>
                     当サイトをご覧いただきありがとうございます。</h3>
-                <div class="about_desc">
+                <div class="about_desc fadeIn">
                     <div class="about_list">
                         <ul>
                             <li>
@@ -103,9 +120,9 @@
                     </div>
                     <img src="./images/about_img-80.jpg" alt="image">
                 </div>
-                <p class="about_text">そんな想いで日々活動をしております。<br>
+                <p class="about_text fadeIn">そんな想いで日々活動をしております。<br>
                     どんな些細なことでもいいので、お気軽に声をかけていただけると幸いです。</p>
-                <div class="my_profile">
+                <div class="my_profile fadeIn">
                     <p><a href="myprofile.html">my profile</a></p>
                 </div>
             </div>
@@ -115,11 +132,11 @@
         </section>
 
         <section id="service" class="contener">
-            <div class="service_btn">
+            <div class="service_btn fadeIn">
                 <img src="./images/asiato_2.svg" alt="足跡">
                 <p>service</p>
             </div>
-            <div id="design" class="service_content">
+            <div id="design" class="service_content fadeIn">
                 <img src="./images/design-80.jpg" alt="design_img">
                 <div class="service_box">
                     <div class="service_tittle">
@@ -142,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div id="coding" class="service_content">
+            <div id="coding" class="service_content fadeIn">
                 <img src="./images/coding-80.jpg" alt="coding_img">
                 <div class="service_box">
                     <div class="service_tittle">
@@ -169,7 +186,7 @@
 
 
         <section id="work" class="contener">
-            <div class="work_btn">
+            <div class="work_btn fadeIn">
                 <img src="./images/asiato_2.svg" alt="足跡">
                 <p>work</p>
             </div>
@@ -260,18 +277,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="all_view">
+                <div class="all_view fadeIn">
                     <p><a href="./workbox.html">all view</a></p>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contener">
-            <div class="contact_btn">
+            <div class="contact_btn fadeIn">
                 <img src="./images/asiato_2.svg" alt="足跡">
                 <p>contact</p>
             </div>
-            <div class="contact_comment">
+            <div class="contact_comment fadeIn">
                 <p>お仕事のご依頼、ご相談など。
                     ほんの些細なことでも声をかけていただけたら嬉しいです。
                     何でもお気軽にどうぞ。<br>お問合わせお待ちしております。</p>
@@ -331,11 +348,25 @@
         </div>
     </footer>
 
+    <script src="./jquery.inview.min.js"></script>
     <script>
         $(function () {
+            function end_loading() {
+                // フェードアウトする時間
+                $('.loading').fadeOut(2000);
+            }
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    end_loading();
+                    // ローディング画面を表示する時間
+                }, 3000)
+            })
             $(".sp_btn").on("click", function () {
                 $(".sp_nav").fadeToggle();
                 $(".sp_btn").toggleClass("open");
+            })
+            $(".sp_nav a").on("click", function () {
+                $(".sp_nav").fadeOut();
             })
 
             $('.work_img').slick({
@@ -343,6 +374,21 @@
                 autoplayspeed: 500,
                 slidesToShow: 1,
                 slidesToscroll: 1,
+            });
+
+            $(".fadeIn").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                } else {
+                    $(this).stop().removeClass("is-show");
+                }
+            });
+            $(".fadeIn_left").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                } else {
+                    $(this).stop().removeClass("is-show");
+                }
             });
         })
     </script>
