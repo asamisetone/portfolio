@@ -141,7 +141,9 @@ h2 {
 }
 
 /* scroll */
-
+.scrolldown {
+  transition: 0.5s;
+}
 .scrolldown p {
   transform: rotate(90deg);
   transform-origin: left;
@@ -961,6 +963,9 @@ p.re_word {
 @media screen and (max-width: 1100px) {
   .pc_nav {
     display: none;
+  }
+  .sns_icon {
+    display: flex;
   }
   /*ハンバーガー*/
   .sp_btn {

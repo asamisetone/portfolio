@@ -29,9 +29,9 @@
 
 
 <body>
-    <!-- <div class="loading"> -->
-    <!-- ローディング中… -->
-    <!-- </div> -->
+    <div class="loading">
+        ローディング中…
+    </div>
 
     <header>
         <div class="hd_main">
@@ -61,10 +61,12 @@
                     <li><a href="#service">service</a></li>
                     <li><a href="#work">work</a></li>
                     <li><a href="#contact">contact</a></li>
-                    <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram_sp.svg"
-                                alt="instagram" class="icon"></a>
+                    <li class="sns_icon">
+                        <a href="https://www.instagram.com/asami3437/">
+                            <img src="./images/instagram_sp.svg" alt="instagram" class="icon">
+                        </a>
+                        <a><img src="./images/x_sp.svg" alt="x" class="icon"></a>
                     </li>
-                    <li><img src="./images/x_sp.svg" alt="x" class="icon"></li>
                 </ul>
             </nav>
         </div>
@@ -391,11 +393,13 @@
                 }
             });
             $(window).scroll(function () {
-                let scroll = $(this).scrollTop()
+                let scroll = $(this).scrollTop() + $(this).height()
                 let contact = $("#contact").offset().top
                 if (scroll > contact) {
                     console.log(contact)
-                    $(".scrolldown").css("display", "none")
+                    $(".scrolldown").css("opacity", "0")
+                } else {
+                    $(".scrolldown").css("opacity", "1")
                 }
             })
         })
