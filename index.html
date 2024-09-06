@@ -390,6 +390,14 @@
                     $(this).stop().removeClass("is-show");
                 }
             });
+            $(window).scroll(function () {
+                let scroll = $(this).scrollTop()
+                let contact = $("#contact").offset().top
+                if (scroll > contact) {
+                    console.log(contact)
+                    $(".scrolldown").css("display", "none")
+                }
+            })
         })
     </script>
 </body>
