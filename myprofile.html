@@ -5,8 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Re; design | ポートフォリオサイト</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'uzt0tup',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
@@ -14,18 +30,18 @@
         <div class="hd_main">
             <div class="logo">
                 <img src="./images/logo.svg" alt="ロゴ">
-                <h1 class="tittle"><a href="main.html"><img src="./images/tittle.svg" alt=""></a></h1>
+                <h1><a href="index.html">Re;design</a></h1>
             </div>
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="main.html#about">about</a></li>
-                    <li><a href="main.html#service">service</a></li>
-                    <li><a href="main.html#work">work</a></li>
-                    <li><a href="main.html#contact">contact</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#service">service</a></li>
+                    <li><a href="index.html#work">work</a></li>
+                    <li><a href="index.html#contact">contact</a></li>
                     <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram.svg" alt="instagram"
                                 class="icon"></a>
                     </li>
-                    <li><img src="./images/x.svg" alt="x" class="icon"></li>
+                    <li><a href="https://x.com/nanami105702241"><img src="./images/x.svg" alt="x" class="icon"></a></li>
                 </ul>
             </nav>
 
@@ -34,14 +50,15 @@
             </div>
             <nav class="sp_nav">
                 <ul>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="##service">service</a></li>
-                    <li><a href="#work">work</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#service">service</a></li>
+                    <li><a href="index.html#work">work</a></li>
+                    <li><a href="index.html#contact">contact</a></li>
                     <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram_sp.svg"
                                 alt="instagram" class="icon"></a>
                     </li>
-                    <li><img src="./images/x_sp.svg" alt="x" class="icon"></li>
+                    <li><a href="https://x.com/nanami105702241"><img src="./images/x_sp.svg" alt="x" class="icon"></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -76,7 +93,7 @@
                         <p class="myprofile_text">Tottori</p>
                     </li>
                     <li>
-                        <p class="myprofile_heading">裏テーマ</p>
+                        <p class="myprofile_heading2">裏テーマ</p>
                         <p class="myprofile_text">裏テーマとして、私の地元の象徴でもあるらくだをモチーフにしました。
                             地元を応援したい、もっと盛り上げたい。<br>
                             そんな方達のお手伝いができればと思っています。</p>
@@ -98,18 +115,32 @@
         <div class="ft_main">
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="main.html#about">about</a></li>
-                    <li><a href="main.html#service">service</a></li>
-                    <li><a href="main.html#work">work</a></li>
-                    <li><a href="main.html#contact">contact</a></li>
+                    <li><a href="index.html#about">about</a></li>
+                    <li><a href="index.html#service">service</a></li>
+                    <li><a href="index.html#work">work</a></li>
+                    <li><a href="index.html#contact">contact</a></li>
                     <li><a href="https://www.instagram.com/asami3437/"><img src="./images/instagram.svg" alt="instagram"
                                 class="icon"></a>
                     </li>
-                    <li><img src="./images/x.svg" alt="x" class="icon"></li>
+                    <li><a href="https://x.com/nanami105702241"><img src="./images/x.svg" alt="x" class="icon"></a></li>
                 </ul>
             </nav>
         </div>
     </footer>
+
+    <script src="./jquery.inview.min.js"></script>
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_nav").fadeToggle();
+                $(".sp_btn").toggleClass("open");
+            })
+            $(".sp_nav a").on("click", function () {
+                $(".sp_nav").fadeOut();
+            })
+
+        })
+    </script>
 </body>
 
 </html>

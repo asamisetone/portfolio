@@ -66,8 +66,11 @@ header {
   height: auto;
   padding-left: 4%;
 }
-p {
+h1 {
   font-family: "uzura";
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 10px;
 }
 
 .logo {
@@ -149,7 +152,7 @@ h2 {
   transform-origin: left;
   margin-left: 8%;
   font-size: 14px;
-  font-family: "Sofia Pro" sans-serif;
+  font-family: "sofia-pro", sans-serif;
 }
 .foot_container {
   display: flex;
@@ -193,10 +196,10 @@ h2 {
   transform: rotate(90deg);
   transform-origin: left;
   font-size: 35px;
-  font-family: "Sofia Pro" sans-serif;
+  font-family: "sofia-pro", sans-serif;
 }
 .about_btn img {
-  width: 36px;
+  width: 33px;
   height: auto;
   margin-left: -18px;
 }
@@ -281,11 +284,13 @@ p.re_word {
   max-width: 70%;
   margin: 0 auto;
 }
-.backdround_Re img {
+.background_Re p {
+  font-size: 700px;
+  font-family: "uzura";
+  color: rgba(227, 214, 201, 0.3);
   position: absolute;
   top: -65px;
-  left: 7%;
-  width: 94%;
+  right: 0;
   z-index: -1;
 }
 
@@ -295,10 +300,10 @@ p.re_word {
   transform: rotate(90deg);
   transform-origin: left;
   font-size: 35px;
-  font-family: "Sofia Pro" sans-serif;
+  font-family: "sofia-pro", sans-serif;
 }
 .service_btn img {
-  width: 36px;
+  width: 33px;
   height: auto;
   margin-left: -18px;
 }
@@ -390,10 +395,10 @@ p.re_word {
   transform: rotate(90deg);
   transform-origin: left;
   font-size: 35px;
-  font-family: "Sofia Pro" sans-serif;
+  font-family: "sofia-pro", sans-serif;
 }
 .work_btn img {
-  width: 36px;
+  width: 33px;
   height: auto;
   margin-left: -18px;
 }
@@ -449,7 +454,7 @@ p.re_word {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 10% 0 0 15%;
+  margin: 8% 0 0 15%;
 }
 .all_view {
   width: 130px;
@@ -513,10 +518,10 @@ p.re_word {
 .contact_btn p {
   font-size: 35px;
   padding-left: 15px;
-  font-family: "Sofia Pro" sans-serif;
+  font-family: "sofia-pro", sans-serif;
 }
 .contact_btn img {
-  width: 36px;
+  width: 33px;
   height: auto;
 }
 .contact_comment p {
@@ -565,15 +570,17 @@ p.re_word {
   display: block;
   width: 300px;
   height: 70px;
-  background-image: url("../images/frame_3.svg");
+  /* background-image: url("../images/frame_3.svg"); */
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #fdf9f2;
+  background-color: #5f3339;
 }
 .contact_text p {
   font-weight: bolder;
+  color: #ffffff;
   letter-spacing: 0.15em;
   /* padding-top: 50px; */
 }
@@ -624,20 +631,26 @@ p.re_word {
   letter-spacing: 0.27em;
   width: 120px;
 }
+.myprofile_heading2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.27em;
+  width: 120px;
+}
 .myprofile_text {
   font-size: 15px;
   letter-spacing: 0.1em;
   line-height: 2;
   max-width: 50%;
 }
-.myprofile_box img {
-  width: 36%;
-  height: auto;
-}
+
 .myprofile_img img {
   position: absolute;
   top: 20%;
-  left: 55%;
+  left: 58%;
+  width: 36%;
+  height: auto;
 }
 
 /* workbox.html */
@@ -675,7 +688,6 @@ p.re_word {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 150px;
   margin: 95px 0 45px 0;
   border-bottom: 1px solid;
   padding-bottom: 15px;
@@ -703,7 +715,6 @@ p.re_word {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  gap: 150px;
   margin: 195px 0 45px 0;
   border-bottom: 1px solid;
   padding-bottom: 15px;
@@ -776,10 +787,11 @@ p.re_word {
   margin: 0 10px 0 60px;
 }
 .workall_view {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 120px;
+  margin-top: -70px;
+  margin-bottom: 200px;
 }
 
 /* work2.html */
@@ -876,6 +888,9 @@ p.re_word {
 .work_sp {
   width: 150px;
 }
+.sp_text {
+  display: none;
+}
 .prev_img4 {
   width: 100px;
   margin: 0 60px 0 10px;
@@ -908,7 +923,6 @@ p.re_word {
 }
 .work_text p {
   line-height: 2;
-  width: 80%;
 }
 .work_text p:nth-of-type(1) {
   padding-bottom: 35px;
@@ -939,6 +953,7 @@ p.re_word {
 }
 .contact_menu p {
   font-size: 40px;
+  font-family: "sofia-pro", sans-serif;
   letter-spacing: 0.02em;
   margin: 160px 0 30px 0;
 }
@@ -966,6 +981,12 @@ p.re_word {
   }
   .sns_icon {
     display: flex;
+  }
+  .sns_icon .icon {
+    width: 15px;
+  }
+  .background_Re p {
+    font-size: 600px;
   }
   /*ハンバーガー*/
   .sp_btn {
@@ -1039,13 +1060,14 @@ p.re_word {
     padding: 25px;
     color: #ffffff;
     font-size: 20px;
+    font-family: "sofia-pro", sans-serif;
     width: 18px;
   }
   .logo img {
     width: 8%;
   }
   h1 {
-    width: 50%;
+    font-size: 30px;
   }
 }
 
@@ -1066,6 +1088,9 @@ p.re_word {
   }
   .sp_only {
     display: inline;
+  }
+  h1 {
+    font-size: 23px;
   }
   h2 {
     font-size: 27px;
@@ -1094,7 +1119,6 @@ p.re_word {
   .about_btn p {
     transform: none;
     font-size: 20px;
-    font-family: "Sofia Pro" sans-serif;
   }
   .about_btn img {
     width: 15px;
@@ -1153,6 +1177,9 @@ p.re_word {
   .about {
     max-width: 65%;
   }
+  .background_Re p {
+    font-size: 240px;
+  }
 
   /* servisu */
 
@@ -1163,7 +1190,6 @@ p.re_word {
   .service_btn p {
     transform: none;
     font-size: 20px;
-    font-family: "Sofia Pro" sans-serif;
   }
   .service_btn img {
     width: 15px;
@@ -1226,7 +1252,8 @@ p.re_word {
     max-width: 75%;
   }
   .work_num {
-    margin-top: -15px;
+    margin-top: 10px;
+    margin-left: -24px;
   }
   .work_num span {
     font-size: 35px;
@@ -1235,6 +1262,9 @@ p.re_word {
   .work_num img {
     width: 22px;
     margin-left: 15px;
+  }
+  .work_img a {
+    width: 90%;
   }
   .work_title {
     flex-direction: column;
@@ -1248,10 +1278,12 @@ p.re_word {
     font-size: 14px;
     margin-left: 0;
   }
+  .work_slider {
+    width: 80%;
+  }
   .work_btn p {
     transform: none;
     font-size: 20px;
-    font-family: "Sofia Pro" sans-serif;
   }
   .work_btn img {
     width: 15px;
@@ -1269,12 +1301,12 @@ p.re_word {
     margin-bottom: 45px;
   }
   .slick-next {
-    top: 75%;
-    right: 15%;
+    top: 30%;
+    right: -5%;
   }
   .slick-prev {
-    top: 75%;
-    left: 65%;
+    top: 30%;
+    left: -5%;
   }
 
   /* contact */
@@ -1318,7 +1350,6 @@ p.re_word {
   .contact_text p {
     font-size: 13px;
     font-weight: bold;
-    margin-top: -14px;
     z-index: 3;
   }
 
@@ -1331,11 +1362,24 @@ p.re_word {
     width: 195px;
     margin-left: -110px;
   }
+  .myprofile_img img {
+    width: 62%;
+    order: 1;
+  }
   .myprofile_heading {
     font-size: 14px;
   }
+  .myprofile_heading2 {
+    font-size: 14px;
+    margin-top: -140px;
+  }
+
   .myprofile_text {
     font-size: 14px;
+  }
+  .myprofile_box li {
+    gap: 10px;
+    margin-right: 0;
   }
   .contact_menu p {
     font-size: 30px;
@@ -1381,12 +1425,22 @@ p.re_word {
     font-size: 14px;
     margin-bottom: 12px;
   }
+  .workall_view {
+    margin-top: 0;
+  }
+  .workall_view a {
+    font-size: 14px;
+  }
   .work_text {
     font-size: 12px;
   }
   .work_text2 {
     margin-top: 24px;
     margin-bottom: 24px;
+  }
+  .work_menubtn {
+    margin-top: 50px;
+    margin-bottom: 0;
   }
   .work_chage {
     font-size: 12px;
@@ -1405,6 +1459,7 @@ p.re_word {
   }
   .next_img2 {
     width: 50px;
+    margin-left: 40px;
   }
   .workall_view {
     font-size: 10px;
@@ -1420,39 +1475,62 @@ p.re_word {
   }
   .prev_img2 {
     width: 60px;
+    margin-right: 27px;
   }
 
   /* work3.html */
 
   .prev_img3 {
     width: 52px;
+    margin-right: 32px;
   }
   .next_img3 {
     width: 77px;
+    margin-left: 10px;
   }
 
   /* work4.html */
 
   .prev_img4 {
     width: 52px;
+    margin-right: 32px;
   }
 
   .next_img4 {
     width: 77px;
+    margin-left: 10px;
+  }
+  .pc_text {
+    display: none;
+  }
+  .sp_text {
+    display: block;
   }
 
-  /* work4.html */
+  /* work5.html */
 
   .prev_img5 {
     width: 77px;
+    margin-right: 10px;
   }
   .next_img5 {
     width: 77px;
+    margin-left: 10px;
   }
 
-  /* work4.html */
+  /* work6.html */
 
   .prev_img6 {
     width: 77px;
+    margin-right: 10px;
+  }
+  .work_text p {
+    font-size: 12px;
+  }
+  .textbox_1 li {
+    font-size: 12px;
+  }
+  .textbox_2 li {
+    font-size: 12px;
   }
 }

@@ -19,7 +19,7 @@ li {
   padding: 0;
   line-height: 1;
   /*デフォルトの文字色、font-familyを予め当てておく*/
-  color: #000;
+  color: #5f3339;
   font-family: Zen Kaku Gothic Antique;
   font-feature-settings: "palt";
   font-size: 15px;
