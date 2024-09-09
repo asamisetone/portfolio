@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 282.66 63.55">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        mask: url(#mask);
+      }
+
+      .cls-4 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-5 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.14em;
+      }
+
+      .cls-7 {
+        fill: #000;
+        font-family: YuGo-Medium, 'YuGo Medium-83pv-RKSJ-H';
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .cls-8 {
+        fill: #efe8df;
+        stroke-width: 0px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-10 {
+        opacity: .8;
+      }
+
+      .cls-11 {
+        letter-spacing: -.09em;
+      }
+
+      .cls-12 {
+        fill: none;
+        stroke: #eadac5;
+        stroke-miterlimit: 10;
+        stroke-width: 1.18px;
+      }
+    </style>
+    <filter id="luminosity-noclip" x="1.17" y="1.43" width="284" height="65" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="1.17" y="1.43" width="284" height="65" maskUnits="userSpaceOnUse">
+      <g class="cls-4">
+        <image width="284" height="65" transform="translate(1.17 1.43)" xlink:href="data:image/png;base64,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"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="_ワイヤー" data-name="ワイヤー">
+    <g>
+      <rect class="cls-12" x=".59" y=".59" width="279.47" height="59.96" rx="11.84" ry="11.84"/>
+      <g class="cls-10">
+        <g class="cls-3">
+          <rect class="cls-8" x="3.19" y="3.59" width="279.47" height="59.96" rx="11.84" ry="11.84"/>
+        </g>
+      </g>
+      <text class="cls-7" transform="translate(66.14 38.06)"><tspan class="cls-6" x="0" y="0">こ</tspan><tspan class="cls-11" x="17.2" y="0">え</tspan><tspan class="cls-1" x="35.4" y="0">を</tspan><tspan x="55" y="0">か</tspan><tspan class="cls-9" x="75" y="0">け</tspan><tspan class="cls-2" x="94" y="0">て</tspan><tspan class="cls-5" x="113.2" y="0">み</tspan><tspan class="cls-2" x="132" y="0">る</tspan></text>
+    </g>
+  </g>
+</svg>

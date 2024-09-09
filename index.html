@@ -30,7 +30,8 @@
 
 <body>
     <div class="loading">
-        ローディング中…
+        <img src="./images/logo.svg" alt="logo">
+        <p class="loading_tittle">Re;design</p>
     </div>
 
     <header>
@@ -285,7 +286,7 @@
             </div>
         </section>
 
-        <section id="contact" class="contener">
+        <section id="contact">
             <div class="contact_btn fadeIn">
                 <img src="./images/asiato_2.svg" alt="足跡">
                 <p>contact</p>
@@ -352,16 +353,41 @@
 
     <script src="./jquery.inview.min.js"></script>
     <script>
+        // アニメーションさせたいクラス
+        var container = $(".loading_tittle");
+        // アニメーションスピード
+        var speed = 170;
+
+        // テキストの間にスペースを入れます
+        var content = container.html();
+        var text = $.trim(content);
+        var newHtml = "";
+
+        // スペースで区切ったテキストを、テキストの数だけspanで囲む
+        text.split("").forEach(function (v) {
+            newHtml += '<span>' + v + '</span>';
+        });
+
+        // spanで囲んだテキスト群をHTMLに戻す
+        container.html(newHtml);
+
+        // 1文字ずつ表示
+        var txtNum = 0;
+        container.css({ opacity: 1 });
+        setInterval(function () {
+            container.find('span').eq(txtNum).css({ opacity: 1 });
+            txtNum++
+        }, speed);
         $(function () {
             function end_loading() {
                 // フェードアウトする時間
-                $('.loading').fadeOut(2000);
+                $('.loading').fadeOut(3000);
             }
             $(window).on('load', function () {
                 setTimeout(function () {
                     end_loading();
                     // ローディング画面を表示する時間
-                }, 3000)
+                }, 4000)
             })
             $(".sp_btn").on("click", function () {
                 $(".sp_nav").fadeToggle();

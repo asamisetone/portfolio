@@ -4,14 +4,37 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  /* 背景色の設定 */
-  background-color: #ffffff;
+  background-color: #f6ebd8;
   z-index: 9999;
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.loading img {
+  width: 55px;
+  opacity: 0;
+  animation: fadeIn 3s ease 2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.loading_tittle {
+  display: block;
+  opacity: 0;
+  font-size: 30px;
+  font-family: "uzura";
+  text-align: center;
+  padding: 15px;
+}
+.loading_tittle span {
+  opacity: 0;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 body {
@@ -105,6 +128,9 @@ h1 {
   font-weight: 400;
   font-style: normal;
   margin: 0 30px 0 30px;
+}
+.pc_nav li:nth-child(4) {
+  color: #81b4ad;
 }
 
 /* main visual */
@@ -508,6 +534,8 @@ p.re_word {
 #contact {
   margin: 0 auto;
   margin-top: 300px;
+  padding: 10%;
+  background: linear-gradient(to bottom, #e3d6c980, #fdf9f2);
 }
 .contact_btn {
   display: flex;
@@ -566,7 +594,6 @@ p.re_word {
   text-align: center;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 300px;
   display: block;
   width: 300px;
   height: 70px;
@@ -694,11 +721,11 @@ p.re_word {
 }
 .workbox_main {
   font-size: 23px;
-  letter-spacing: 0.08;
+  letter-spacing: 0.08em;
 }
 .workbox_side {
   font-size: 14px;
-  letter-spacing: 0.23;
+  letter-spacing: 0.23em;
   margin-left: auto;
 }
 .workbox_img img {
@@ -721,11 +748,11 @@ p.re_word {
 }
 .work_aboutbox_main {
   font-size: 40px;
-  letter-spacing: 0.08;
+  letter-spacing: 0.08em;
 }
 .work_aboutbox_side {
   font-size: 14px;
-  letter-spacing: 0.23;
+  letter-spacing: 0.23em;
   margin-left: auto;
 }
 .work_1_img img {
@@ -948,17 +975,44 @@ p.re_word {
 
 /* contact */
 
-.contact_menu {
+.contact_tittle {
   text-align: center;
-}
-.contact_menu p {
   font-size: 40px;
+  color: #81b4ad;
   font-family: "sofia-pro", sans-serif;
   letter-spacing: 0.02em;
-  margin: 160px 0 30px 0;
+  margin: 170px 0 30px 0;
 }
-.contact_menu img {
-  width: 300px;
+.contact_button a {
+  font-size: 16px;
+  letter-spacing: 0.15em;
+}
+.contact_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3dec2;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  width: 250px;
+  padding: 25px 0;
+  border: none;
+  border-radius: 50vh;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+}
+.contact_button p::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid #5f3339;
+  border-right: 1px solid #5f3339;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 28px;
+  left: 210px;
 }
 
 /* footer */
@@ -1033,10 +1087,12 @@ p.re_word {
   .sp_btn.open span::before {
     bottom: 0;
     transform: rotate(45deg);
+    background: #ffffff;
   }
   .sp_btn.open span::after {
     top: 0;
     transform: rotate(135deg);
+    background: #ffffff;
   }
 
   /*SP版メニュー*/
@@ -1059,9 +1115,11 @@ p.re_word {
   .sp_nav ul li {
     padding: 25px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "sofia-pro", sans-serif;
-    width: 18px;
+  }
+  .icon {
+    width: 25px;
   }
   .logo img {
     width: 8%;
@@ -1381,11 +1439,22 @@ p.re_word {
     gap: 10px;
     margin-right: 0;
   }
-  .contact_menu p {
+  .contact_tittle {
     font-size: 30px;
   }
-  .contact_menu img {
-    width: 230px;
+  .contact_button {
+    width: 195px;
+    padding: 20px 0;
+  }
+  .contact_button a {
+    font-size: 15px;
+  }
+  .contact_button p::after {
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 23px;
+    left: 165px;
   }
 
   /* workbox.html */
