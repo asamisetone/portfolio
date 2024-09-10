@@ -612,9 +612,11 @@ p.re_word {
   background-color: #5f3339;
 }
 .contact_text p {
+  font-size: 17px;
   font-weight: bolder;
   color: #ffffff;
-  letter-spacing: 0.15em;
+  letter-spacing: 1.3em;
+  text-indent: 1.3em;
   /* padding-top: 50px; */
 }
 .contact_text img {
@@ -622,6 +624,20 @@ p.re_word {
   position: absolute;
   top: 20px;
   left: 280px;
+}
+
+/* footer */
+
+.ft_main {
+  margin: 165px 70px 70px 0;
+  text-align: center;
+}
+.copylight {
+  font-size: 11px;
+  font-family: "sofia-pro", sans-serif;
+  letter-spacing: 0, 15em;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 /* myprofile.html */
@@ -1025,13 +1041,6 @@ p.re_word {
   left: 210px;
 }
 
-/* footer */
-
-.ft_main {
-  margin: 165px 70px 70px 0;
-  text-align: center;
-}
-
 /*スマホ版メニュー*/
 
 .sp_nav,
@@ -1146,6 +1155,7 @@ p.re_word {
   .mainvisual img {
     width: 100%;
     margin-bottom: 35px;
+    margin-top: -50px;
   }
   .copy {
     position: static;
