@@ -515,8 +515,8 @@ p.re_word {
   display: block;
   width: 15px;
   height: 15px;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #5f3339;
+  border-right: 3px solid #5f3339;
   transform: rotate(-135deg);
 }
 .slick-next {
@@ -528,8 +528,8 @@ p.re_word {
   display: block;
   width: 15px;
   height: 15px;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #5f3339;
+  border-right: 3px solid #5f3339;
   transform: rotate(45deg);
 }
 .slick-slide {
@@ -1458,6 +1458,7 @@ p.re_word {
   .myprofile_title p {
     font-size: 25px;
     font-weight: 400;
+    margin-top: 120px;
   }
   .myprofile_title img {
     width: 195px;
@@ -1474,7 +1475,6 @@ p.re_word {
     font-size: 14px;
     margin-top: -140px;
   }
-
   .myprofile_text {
     font-size: 14px;
   }
