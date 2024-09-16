@@ -154,11 +154,9 @@ h1 {
 h2 {
   font-size: 46px;
   line-height: 1.8;
-  letter-spacing: 0.35em;
-  font-weight: 100;
+  letter-spacing: 0.25em;
   margin-bottom: 10px;
-  font-family: "zen-kaku-gothic-antique", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 }
 .mainvisual p {
@@ -186,6 +184,7 @@ h2 {
   gap: 5px;
   margin-left: 7%;
   margin-top: 70px;
+  width: 20px;
 }
 
 .foot {
@@ -247,7 +246,7 @@ h2 {
 h3 {
   font-size: 30px;
   font-weight: 400;
-  line-height: 2.2;
+  line-height: 2;
   letter-spacing: 0.2em;
 }
 .about_desc {
@@ -264,17 +263,20 @@ h3 {
 }
 .about_desc li {
   display: flex;
-  font-size: 16px;
+  font-size: 18px;
   gap: 60px;
   margin-bottom: 30px;
 }
 .re_mean {
   margin-right: 20px;
   font-weight: bold;
-  width: 210px;
+  width: 240px;
+}
+.re_word {
+  font-size: 18px;
 }
 p.re_word {
-  width: 120px;
+  width: 130px;
 }
 .about_desc li span {
   color: #81b4ad;
@@ -300,7 +302,6 @@ p.re_word {
 }
 .my_profile a {
   margin-right: 40px;
-  font-size: 13px;
   font-weight: bold;
 }
 .my_profile p::after {
@@ -467,7 +468,9 @@ p.re_word {
 }
 .work_num span {
   font-size: 70px;
+  font-family: "sofia-pro", sans-serif;
   font-weight: bold;
+  letter-spacing: 0.1em;
   margin-left: 122px;
 }
 .work_num img {
@@ -486,7 +489,7 @@ p.re_word {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 8% 0 0 15%;
+  margin: 6% 0 0 15%;
 }
 .all_view {
   width: 130px;
@@ -499,7 +502,6 @@ p.re_word {
 }
 .all_view a {
   margin-right: 40px;
-  font-size: 13px;
   font-weight: bold;
 }
 .all_view p::after {
@@ -795,7 +797,6 @@ p.re_word {
 }
 .work_text {
   line-height: 2;
-  width: 80%;
 }
 .work_text2 {
   display: flex;
@@ -1182,8 +1183,8 @@ p.re_word {
   .scrolldown {
     position: fixed;
     bottom: 7%;
-    left: 0;
-    width: 100%;
+    left: 30px;
+    width: 20px;
     z-index: 5;
   }
   .scrolldown p {
@@ -1191,6 +1192,9 @@ p.re_word {
   }
   .scrolldown img {
     width: 12px;
+  }
+  .foot_container {
+    margin-left: -7px;
   }
 
   /* about */
@@ -1247,13 +1251,15 @@ p.re_word {
   .about_text {
     margin: 0 auto;
     margin-top: 40px;
-    font-size: 12px;
+    font-size: 15px;
+    line-height: 1.75;
+    letter-spacing: 0.12em;
   }
   .my_profile {
     margin-right: -40px;
   }
   .my_profile p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .about_list {
     padding-left: 0%;
@@ -1455,6 +1461,9 @@ p.re_word {
 
   /* my_profile */
 
+  #myprofile {
+    max-width: 84%;
+  }
   .myprofile_title p {
     font-size: 25px;
     font-weight: 400;
@@ -1467,6 +1476,7 @@ p.re_word {
   .myprofile_img img {
     width: 62%;
     order: 1;
+    position: initial;
   }
   .myprofile_heading {
     font-size: 14px;
@@ -1485,19 +1495,8 @@ p.re_word {
   .contact_tittle {
     font-size: 30px;
   }
-  .contact_button {
-    width: 220px;
-    padding: 20px 0;
-  }
   .contact_button a {
     font-size: 15px;
-  }
-  .contact_button p::after {
-    width: 7px;
-    height: 7px;
-    position: absolute;
-    top: 23px;
-    left: 185px;
   }
 
   /* workbox.html */
