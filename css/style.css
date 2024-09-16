@@ -106,7 +106,6 @@ h1 {
 }
 .hd_main {
   height: 100px;
-  max-width: 1100px;
   margin-right: 70px;
   align-items: center;
   display: flex;
@@ -293,7 +292,7 @@ p.re_word {
   object-fit: cover;
 }
 .my_profile {
-  width: 130px;
+  width: 140px;
   text-align: center;
   float: right;
   border-bottom: 1px solid #5f3339;
@@ -301,6 +300,7 @@ p.re_word {
   padding-top: 20px;
 }
 .my_profile a {
+  font-size: 18px;
   margin-right: 40px;
   font-weight: bold;
 }
@@ -398,6 +398,7 @@ p.re_word {
   align-items: flex-start;
 }
 .tool {
+  font-weight: bold;
   margin-left: 15px;
 }
 .service_tool > p {
@@ -413,7 +414,7 @@ p.re_word {
 .service_frame img {
   width: 145px;
   position: absolute;
-  top: -50%;
+  top: -30%;
   left: 0;
 }
 #coding {
@@ -501,6 +502,7 @@ p.re_word {
   margin-top: 70px;
 }
 .all_view a {
+  font-size: 18px;
   margin-right: 40px;
   font-weight: bold;
 }
@@ -673,7 +675,7 @@ p.re_word {
 }
 .myprofile_box li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 95px;
   margin: 30px;
 }
@@ -682,14 +684,7 @@ p.re_word {
   font-weight: bold;
   line-height: 2;
   letter-spacing: 0.27em;
-  width: 120px;
-}
-.myprofile_heading2 {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 2;
-  letter-spacing: 0.27em;
-  width: 120px;
+  width: 130px;
 }
 .myprofile_text {
   font-size: 15px;
@@ -749,10 +744,12 @@ p.re_word {
 }
 .workbox_main {
   font-size: 23px;
+  font-weight: bold;
   letter-spacing: 0.08em;
 }
 .workbox_side {
   font-size: 14px;
+  font-weight: bold;
   letter-spacing: 0.23em;
   margin-left: auto;
 }
@@ -1008,7 +1005,7 @@ p.re_word {
   color: #81b4ad;
   font-family: "sofia-pro", sans-serif;
   letter-spacing: 0.02em;
-  margin: 30px 0 30px 0;
+  margin: 150px 0 30px 0;
 }
 .contact_button a {
   font-size: 16px;
@@ -1030,7 +1027,7 @@ p.re_word {
   transition: 0.3s ease;
   position: relative;
 }
-.contact_button p::after {
+.contact_button::after {
   content: "";
   width: 9px;
   height: 9px;
@@ -1320,36 +1317,37 @@ p.re_word {
     margin-left: 0;
   }
   .service_text p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
+    letter-spacing: 0.12em;
   }
   .service_tool p:nth-of-type(1) {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.2;
     margin-right: 0;
-    width: 100px;
+    width: 120px;
   }
   .service_tool p:nth-of-type(2) {
     margin-left: 20px;
     font-size: 12px;
   }
   .service_frame img {
-    width: 115px;
+    width: 130px;
   }
   .tool {
     margin-top: -5px;
-    margin-left: 0;
   }
 
   /* work */
 
   #work {
-    max-width: 75%;
+    max-width: 90%;
     padding-top: 100px;
     margin-top: 0;
   }
   .work_num {
-    margin-top: 10px;
-    margin-left: -24px;
+    margin-top: 0;
+    margin-left: -40px;
   }
   .work_num span {
     font-size: 35px;
@@ -1357,7 +1355,8 @@ p.re_word {
   }
   .work_num img {
     width: 22px;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-top: 8px;
   }
   .work_img a {
     width: 90%;
@@ -1365,13 +1364,16 @@ p.re_word {
   .work_title {
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 8%;
   }
   .work_title p:nth-of-type(1) {
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
   }
   .work_title p:nth-of-type(2) {
     font-size: 14px;
+    font-weight: bold;
     margin-left: 0;
   }
   .work_slider {
@@ -1399,14 +1401,11 @@ p.re_word {
   }
   .slick-next {
     top: 30%;
-    right: -5%;
+    right: -2%;
   }
   .slick-prev {
     top: 30%;
-    left: -5%;
-  }
-  .all_view {
-    margin-right: -20px;
+    left: -2%;
   }
 
   /* contact */
@@ -1432,6 +1431,9 @@ p.re_word {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+  }
+  .contact_1 {
+    margin-left: 0;
   }
   .contact_2 {
     width: 80%;
@@ -1474,22 +1476,23 @@ p.re_word {
     margin-left: -110px;
   }
   .myprofile_img img {
-    width: 62%;
-    order: 1;
+    width: 100%;
     position: initial;
   }
   .myprofile_heading {
-    font-size: 14px;
+    font-size: 16px;
   }
   .myprofile_heading2 {
     font-size: 14px;
     margin-top: -140px;
   }
   .myprofile_text {
-    font-size: 14px;
+    font-size: 15px;
+    max-width: 100%;
   }
   .myprofile_box li {
-    gap: 10px;
+    flex-direction: column;
+    gap: 2px;
     margin-right: 0;
   }
   .contact_tittle {
@@ -1544,7 +1547,7 @@ p.re_word {
     font-size: 14px;
   }
   .work_text {
-    font-size: 12px;
+    font-size: 14px;
   }
   .work_text2 {
     margin-top: 24px;
@@ -1555,16 +1558,16 @@ p.re_word {
     margin-bottom: 0;
   }
   .work_chage {
-    font-size: 12px;
+    font-size: 14px;
   }
   .work_chage2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .work_text3 img {
-    width: 93px;
+    width: 98px;
   }
   .work_tool2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .next p {
     font-size: 10px;
