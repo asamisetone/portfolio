@@ -46,7 +46,7 @@ body {
 .fadeIn_left {
   opacity: 0;
   transform: translate(-50%, 0);
-  transition: 3s;
+  transition: 10s;
 }
 .fadeIn_left.is-show {
   transform: translate(0, 0);
@@ -54,7 +54,7 @@ body {
 }
 .fadeIn {
   opacity: 0;
-  transform: translate(0, 50%);
+  transform: translate(0, 20%);
   transition: 2s;
 }
 .fadeIn.is-show {
@@ -1204,7 +1204,7 @@ a.workall_view:hover:before {
     width: 25px;
   }
   .logo img {
-    width: 8%;
+    width: 10%;
   }
   h1 {
     font-size: 30px;
@@ -1340,7 +1340,7 @@ a.workall_view:hover:before {
     padding-top: 0;
   }
   #coding {
-    margin-top: 60px;
+    margin-top: 70px;
   }
   .service_btn p {
     transform: none;
@@ -1529,7 +1529,7 @@ a.workall_view:hover:before {
   #myprofile {
     max-width: 84%;
   }
-  .myprofile_title p {
+  .myprofile_title {
     font-size: 25px;
     font-weight: 400;
     margin-top: 120px;
@@ -1567,7 +1567,7 @@ a.workall_view:hover:before {
 
   /* workbox.html */
 
-  .workbox_title p {
+  .workbox_title {
     font-size: 25px;
   }
   .workbox_title img {
