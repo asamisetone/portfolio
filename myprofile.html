@@ -66,14 +66,11 @@
 
     <main>
         <section id="myprofile">
-            <div class="myprofile_title">
-                <p>わたしのこと</p>
-                <!-- <img src="./images/underline_2.svg" alt="underline"> -->
-            </div>
+            <p class="myprofile_title">わたしのこと</p>
             <div class="myprofile_img">
                 <img src="./images/my_profile-80.jpg" alt="my_profile">
             </div>
-            <div class="myprofile_box">
+            <div class="myprofile_box fadeIn">
                 <ul>
                     <li>
                         <p class="myprofile_heading">名前</p>
@@ -133,6 +130,32 @@
 
     <script src="./jquery.inview.min.js"></script>
     <script>
+        // アニメーションさせたいクラス
+        var container = $(".myprofile_title");
+        // アニメーションスピード
+        var speed = 180;
+
+        // テキストの間にスペースを入れます
+        var content = container.html();
+        var text = $.trim(content);
+        var newHtml = "";
+
+        // スペースで区切ったテキストを、テキストの数だけspanで囲む
+        text.split("").forEach(function (v) {
+            newHtml += '<span>' + v + '</span>';
+        });
+
+        // spanで囲んだテキスト群をHTMLに戻す
+        container.html(newHtml);
+
+        // 1文字ずつ表示
+        var txtNum = 0;
+        container.css({ opacity: 1 });
+        setInterval(function () {
+            container.find('span').eq(txtNum).css({ opacity: 1 });
+            txtNum++
+        }, speed);
+
         $(function () {
             $(".sp_btn").on("click", function () {
                 $(".sp_nav").fadeToggle();
@@ -142,6 +165,13 @@
                 $(".sp_nav").fadeOut();
             })
 
+            $(".fadeIn").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                } else {
+                    $(this).stop().removeClass("is-show");
+                }
+            });
         })
     </script>
 </body>
